@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RunCLI </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RunCLI ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Epew.Core.Verbs.RunCLI">
+
+
+
+  <h1 id="Epew_Core_Verbs_RunCLI" data-uid="Epew.Core.Verbs.RunCLI" class="text-break">Class RunCLI</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Epew.Core.Verbs.VerbBase.html">VerbBase</a></div>
+    <div class="level2"><span class="xref">RunCLI</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Epew.html">Epew</a>.<a class="xref" href="Epew.Core.html">Core</a>.<a class="xref" href="Epew.Core.Verbs.html">Verbs</a></h6>
+  <h6><strong>Assembly</strong>: Epew.dll</h6>
+  <h5 id="Epew_Core_Verbs_RunCLI_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Verb(&quot;RunCLI&quot;, true, null, HelpText = &quot;Runs a program using the arguments specified by commandline-arguments.&quot;)]
+public class RunCLI : VerbBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_AddLogOverhead_" data-uid="Epew.Core.Verbs.RunCLI.AddLogOverhead*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_AddLogOverhead" data-uid="Epew.Core.Verbs.RunCLI.AddLogOverhead">AddLogOverhead</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;g&#39;, &quot;AddLogOverhead&quot;, Required = false, HelpText = &quot;Add log overhead&quot;, Default = false)]
+public bool AddLogOverhead { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Argument_" data-uid="Epew.Core.Verbs.RunCLI.Argument*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Argument" data-uid="Epew.Core.Verbs.RunCLI.Argument">Argument</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;a&#39;, &quot;Argument&quot;, Required = false, HelpText = &quot;Argument for the program which should be executed&quot;, Default = &quot;&quot;)]
+public string Argument { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_ArgumentIsBase64Encoded_" data-uid="Epew.Core.Verbs.RunCLI.ArgumentIsBase64Encoded*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_ArgumentIsBase64Encoded" data-uid="Epew.Core.Verbs.RunCLI.ArgumentIsBase64Encoded">ArgumentIsBase64Encoded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;b&#39;, &quot;ArgumentIsBase64Encoded&quot;, Required = false, HelpText = &quot;Specifies whether Argument is base64-encoded&quot;, Default = false)]
+public bool ArgumentIsBase64Encoded { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_ExitCodeFile_" data-uid="Epew.Core.Verbs.RunCLI.ExitCodeFile*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_ExitCodeFile" data-uid="Epew.Core.Verbs.RunCLI.ExitCodeFile">ExitCodeFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;x&#39;, &quot;ExitCodeFile&quot;, Required = false, HelpText = &quot;File for the exitcode of the executed program&quot;)]
+public string ExitCodeFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_HideConsoleWindow_" data-uid="Epew.Core.Verbs.RunCLI.HideConsoleWindow*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_HideConsoleWindow" data-uid="Epew.Core.Verbs.RunCLI.HideConsoleWindow">HideConsoleWindow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;h&#39;, &quot;HideConsoleWindow&quot;, Required = false, HelpText = &quot;Hide console window&quot;, Default = false)]
+public bool HideConsoleWindow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_LogFile_" data-uid="Epew.Core.Verbs.RunCLI.LogFile*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_LogFile" data-uid="Epew.Core.Verbs.RunCLI.LogFile">LogFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;f&#39;, &quot;LogFile&quot;, Required = false, HelpText = &quot;Logfile for Epew&quot;)]
+public string LogFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_LogNamespace_" data-uid="Epew.Core.Verbs.RunCLI.LogNamespace*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_LogNamespace" data-uid="Epew.Core.Verbs.RunCLI.LogNamespace">LogNamespace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;l&#39;, &quot;LogNamespace&quot;, Required = false, HelpText = &quot;Namespace for log&quot;, Default = &quot;&quot;)]
+public string LogNamespace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_MaximalLogFileSize_" data-uid="Epew.Core.Verbs.RunCLI.MaximalLogFileSize*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_MaximalLogFileSize" data-uid="Epew.Core.Verbs.RunCLI.MaximalLogFileSize">MaximalLogFileSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;m&#39;, &quot;MaximalLogFileSize&quot;, Required = false, Default = 0, HelpText = &quot;When the log-file-size will be larger MaximalLogFileSize then the log-file will be rotated.&quot;)]
+public uint MaximalLogFileSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_NotSynchronous_" data-uid="Epew.Core.Verbs.RunCLI.NotSynchronous*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_NotSynchronous" data-uid="Epew.Core.Verbs.RunCLI.NotSynchronous">NotSynchronous</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;n&#39;, &quot;NotSynchronous&quot;, Required = false, HelpText = &quot;Run the program asynchronously&quot;, Default = false)]
+public bool NotSynchronous { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Password_" data-uid="Epew.Core.Verbs.RunCLI.Password*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Password" data-uid="Epew.Core.Verbs.RunCLI.Password">Password</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;c&#39;, &quot;Password&quot;, Required = false, HelpText = &quot;Password of the user&quot;, Default = null)]
+public string Password { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_PrintErrorsAsInformation_" data-uid="Epew.Core.Verbs.RunCLI.PrintErrorsAsInformation*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_PrintErrorsAsInformation" data-uid="Epew.Core.Verbs.RunCLI.PrintErrorsAsInformation">PrintErrorsAsInformation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;i&#39;, &quot;PrintErrorsAsInformation&quot;, Required = false, HelpText = &quot;Treat errors as information&quot;, Default = false)]
+public bool PrintErrorsAsInformation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_ProcessIdFile_" data-uid="Epew.Core.Verbs.RunCLI.ProcessIdFile*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_ProcessIdFile" data-uid="Epew.Core.Verbs.RunCLI.ProcessIdFile">ProcessIdFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;r&#39;, &quot;ProcessIdFile&quot;, Required = false, HelpText = &quot;File for the process-id of the executed program&quot;)]
+public string ProcessIdFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Program_" data-uid="Epew.Core.Verbs.RunCLI.Program*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Program" data-uid="Epew.Core.Verbs.RunCLI.Program">Program</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;p&#39;, &quot;Program&quot;, Required = true, HelpText = &quot;Program which should be executed&quot;)]
+public string Program { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_StdErrFile_" data-uid="Epew.Core.Verbs.RunCLI.StdErrFile*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_StdErrFile" data-uid="Epew.Core.Verbs.RunCLI.StdErrFile">StdErrFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;e&#39;, &quot;StdErrFile&quot;, Required = false, HelpText = &quot;File for the stderr of the executed program&quot;)]
+public string StdErrFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_StdOutFile_" data-uid="Epew.Core.Verbs.RunCLI.StdOutFile*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_StdOutFile" data-uid="Epew.Core.Verbs.RunCLI.StdOutFile">StdOutFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;o&#39;, &quot;StdOutFile&quot;, Required = false, HelpText = &quot;File for the stdout of the executed program&quot;)]
+public string StdOutFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_TimeoutInMilliseconds_" data-uid="Epew.Core.Verbs.RunCLI.TimeoutInMilliseconds*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_TimeoutInMilliseconds" data-uid="Epew.Core.Verbs.RunCLI.TimeoutInMilliseconds">TimeoutInMilliseconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;d&#39;, &quot;TimeoutInMilliseconds&quot;, Required = false, HelpText = &quot;Maximal duration of the execution process before it will by aborted by Epew&quot;, Default = 2147483647)]
+public int TimeoutInMilliseconds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Title_" data-uid="Epew.Core.Verbs.RunCLI.Title*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Title" data-uid="Epew.Core.Verbs.RunCLI.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;t&#39;, &quot;Title&quot;, Required = false, HelpText = &quot;Title for the execution-process&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_User_" data-uid="Epew.Core.Verbs.RunCLI.User*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_User" data-uid="Epew.Core.Verbs.RunCLI.User">User</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;u&#39;, &quot;User&quot;, Required = false, HelpText = &quot;Run the program as the given user&quot;, Default = null)]
+public string User { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Verbosity_" data-uid="Epew.Core.Verbs.RunCLI.Verbosity*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Verbosity" data-uid="Epew.Core.Verbs.RunCLI.Verbosity">Verbosity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;v&#39;, &quot;Verbosity&quot;, Required = false, HelpText = &quot;Verbosity of Epew. The concrete available values are documentated at https://aniondev.github.io/GRYLibraryReference/api/GRYLibrary.Core.Miscellaneous.Verbosity.html&quot;, Default = Verbosity.Full)]
+public Verbosity Verbosity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Verbosity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Workingdirectory_" data-uid="Epew.Core.Verbs.RunCLI.Workingdirectory*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Workingdirectory" data-uid="Epew.Core.Verbs.RunCLI.Workingdirectory">Workingdirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(&#39;w&#39;, &quot;Workingdirectory&quot;, Required = false, HelpText = &quot;Workingdirectory for the program which should be executed&quot;)]
+public string Workingdirectory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Accept_" data-uid="Epew.Core.Verbs.RunCLI.Accept*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Accept_Epew_Core_Verbs_IVerbBaseVisitor_" data-uid="Epew.Core.Verbs.RunCLI.Accept(Epew.Core.Verbs.IVerbBaseVisitor)">Accept(IVerbBaseVisitor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Accept(IVerbBaseVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Epew.Core.Verbs.IVerbBaseVisitor.html">IVerbBaseVisitor</a></td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Epew.Core.Verbs.VerbBase.html#Epew_Core_Verbs_VerbBase_Accept_Epew_Core_Verbs_IVerbBaseVisitor_">VerbBase.Accept(IVerbBaseVisitor)</a></div>
+
+
+  <a id="Epew_Core_Verbs_RunCLI_Accept_" data-uid="Epew.Core.Verbs.RunCLI.Accept*"></a>
+  <h4 id="Epew_Core_Verbs_RunCLI_Accept__1_Epew_Core_Verbs_IVerbBaseVisitor___0__" data-uid="Epew.Core.Verbs.RunCLI.Accept``1(Epew.Core.Verbs.IVerbBaseVisitor{``0})">Accept&lt;T&gt;(IVerbBaseVisitor&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Accept&lt;T&gt;(IVerbBaseVisitor&lt;T&gt; visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Epew.Core.Verbs.IVerbBaseVisitor-1.html">IVerbBaseVisitor</a>&lt;T&gt;</td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Epew.Core.Verbs.VerbBase.html#Epew_Core_Verbs_VerbBase_Accept__1_Epew_Core_Verbs_IVerbBaseVisitor___0__">VerbBase.Accept&lt;T&gt;(IVerbBaseVisitor&lt;T&gt;)</a></div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
